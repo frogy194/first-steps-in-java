@@ -8,9 +8,10 @@ public class Main1 {
     public static void main(String[] args) {
 
         System.out.println(Arrays.toString(diceThrower("3D70+5")));
+        System.out.println(Arrays.toString(diceThrower("2D40+5")));
     }
 
-    static int[] diceThrower(String factor) {
+    private static int[] diceThrower(String factor) {
         Random r = new Random();
         int times, add = 0;
         String[] arr = factor.split("[^0-9]");

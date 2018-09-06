@@ -36,7 +36,7 @@ public class Main1 {
         return number;
 
     }
-    public static boolean isNumeric(String str) {
+    static boolean isNumeric(String str) {
         try {
             double d = Double.parseDouble(str);
         } catch (NumberFormatException nfe) {

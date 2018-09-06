@@ -16,12 +16,8 @@ public class Main1 {
                 System.out.println("Podana liczba byla juz wprowadzona, podaj inna ");
                 number = getNumber();
             }
-//            for (int k : arr) {                                                        Nie mam pomyslu jak to while zmienić :/
-//                if (number == k) {
-//                        System.out.println("Podana liczba byla juz wprowadzona, podaj inna ");
-//                        number = getNumber();
-//                    }
-//            }
+
+
             arr[i] = number;
         }
         Arrays.sort(arr);
@@ -70,7 +66,7 @@ public class Main1 {
     }
 
 
-    public static boolean isNumeric(String str) {
+    private static boolean isNumeric(String str) {
         try {
             int d = Integer.parseInt(str);
         } catch (NumberFormatException nfe) {

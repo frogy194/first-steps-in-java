@@ -10,7 +10,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.nio.file.Files;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -22,18 +22,11 @@ public class Main1 {
         words("http://onet.pl");
         words("http://demotywatory.pl");
         File file = new File("popular_words.txt");
-
         filtered(file,exclude);
-
-
-
 
     }
 
-
-
-
-    static void words(String site) {
+    private static void words(String site) {
         String all = "";
         Connection connect = Jsoup.connect(site);
         try {
@@ -73,7 +66,7 @@ public class Main1 {
 
     }
 
-    static void filtered(File file,String[] excluded) {
+    private static void filtered(File file, String[] excluded) {
         String sc = "";
 
         try {
